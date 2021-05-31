@@ -23,6 +23,7 @@ pip install -r requirements.txt
 
 ### Result.
 
+```bash
 ├── train
 │   ├── cat
 │   │   ├── 00002.jpg
@@ -39,6 +40,10 @@ pip install -r requirements.txt
     │   └── 00001.jpg
     └── dog
         └── 00001.jpg
+
+```
+
+
 
 
 
