@@ -35,9 +35,12 @@ for class_name in classes:
     for image in images:
         if image.split('.')[-1] == 'webp':
             origin_image = os.path.join('./train', class_name, image)
-            img = Image.open(origin_image).convert('RGB')
+            try:
+                img = Image.open(origin_image).convert('RGB')
+                img.save(origin_image[:-5])  # remove .webp in name
+            except:
+                pass
             os.remove(origin_image)
-            img.save(origin_image[:-5])  # remove .webp in name
 
 for class_name in classes:
     images = os.listdir(os.path.join('./train', class_name))
