@@ -1,13 +1,13 @@
-make dataset for training with **only keywords.**
+make dataset for training with **only keywords** from google.
 
 
 
-### Quick Start
+### Usage
 
 ```bash
 python main.py -k "cat,dog" -n 5 
 # -k, --keywords 
-# -n, --nums  -> total_image_cnt
+# -n, --nums  -> input total image count
 # -r, --ratio -> train/val split ratio (default 0.2)
 ```
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 
 
-### Result.
+### Result
 
 ```bash
 ├── train
